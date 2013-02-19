@@ -1,0 +1,87 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#slider{
+  position: relative;
+  
+  .content-absolute {
+    position:absolute;
+    width:50%;
+  }
+
+}
+
+#featured { 
+  background: url(spinner.gif) center center #f4f4f4 no-repeat; 
+  height: 300px; 
+
+  img { display: none;}
+
+  &.orbit {background: none;
+    img {display: block;}
+  }
+
+}
+
+.banner-wrapper{
+  background:#F2D03B;
+  position: relative;
+  top: -20px;
+}
+
+//fix design to kewl css
+.triangle-border.top{
+  z-index: 3;
+  margin: 0;
+}
+
+.triangle-border {
+  position:relative;
+  padding:15px;
+  margin:1em 0 3em;
+  border:5px solid #F2D03B;
+  color:#333;
+  background:#F2D03B;
+  /* css3 */
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+
+  & h1{color:#FFF;}
+}
+
+.triangle-border:before {
+  content:"";
+  position:absolute;
+  border-width:20px 20px 0;
+  border-style:solid;
+  border-color:#F2D03B transparent;
+  display:block; 
+  width:0;
+}
+
+/* creates the smaller  triangle */
+.triangle-border:after {
+  content:"";
+  position:absolute;
+  border-style:solid;
+  border-color:#fff transparent;
+  display:block; 
+  width:0;
+}
+    
+.triangle-border.top:before {
+  top:-20px; /*   value = - border-top-width - border-bottom-width */
+  bottom:auto;
+  left:auto;
+  right:40px; /* controls horizontal position */
+  border-width:0 20px 20px;
+}
+
+.triangle-border.top:after {
+  top:-13px; /* value = - border-top-width - border-bottom-width */
+  bottom:auto;
+  left:auto;
+  right:47px; /* value = (:before right) + (:before border-right) -right (:after border-right) */
+  border-width:0 13px 13px;
+}

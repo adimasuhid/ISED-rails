@@ -1,0 +1,63 @@
+
+/ First Band
+.row
+  .twelve.columns
+    -#= image_tag "http://placehold.it/1000x400&text=[img]"
+    #slider
+      %div{"data-caption" => "#captionOne"}
+        .content-absolute
+          %h4 Lorem ipsum dolor sit amet something
+          %p Maecenas non nibh odio. Suspendisse ac urna metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et dapibus nibh. Aenean convallis
+        =image_tag "/assets/sumilao_small.jpg"
+      %div{"data-caption" => "#captionTwo"}
+        .content-absolute
+          %h4 Lorem ipsum dolor sit amet something
+          %p Maecenas non nibh odio. Suspendisse ac urna metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et dapibus nibh. Aenean convallis
+        =image_tag "http://placehold.it/1000x400&text=[Story2]"
+      =image_tag "http://placehold.it/1000x400&text=[Story3]"
+      =image_tag "http://placehold.it/1000x400&text=[Story4]"
+.banner-wrapper
+  .row
+    .twelve.columns
+      .triangle-border.top
+        %span
+          %h1 
+            what's your csr STORY?
+            %i.icon-double-angle-right.icon-1x
+
+
+%hr
+
+/Second Band
+.row
+  .eight.columns
+    %h4 This is a content section.
+    %p Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
+    %p Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
+    %p
+      =link_to "Next Page","#",:class=>"secondary small button"
+  .four.columns
+    %ul.block-grid.three-up
+      %li
+        =image_tag "http://placehold.it/120x120"
+      %li
+        =image_tag "http://placehold.it/120x120"
+      %li
+        =image_tag "http://placehold.it/120x120"
+      %li
+        =image_tag "http://placehold.it/120x120"
+      %li
+        =image_tag "http://placehold.it/120x120"
+      %li
+        =image_tag "http://placehold.it/120x120"
+
+/Call to Action
+.row
+  .twelve.columns
+    .panel
+      %h4 Get in touch!
+      .row
+        .nine.columns
+          %p We'd love to hear from you, you attractive person you.
+        .three.columns
+          = link_to "Contact Us","#",:class=>"radius button right"
